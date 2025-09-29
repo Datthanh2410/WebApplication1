@@ -181,6 +181,9 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\_LayoutPage1.cshtml" />
     <Content Include="Views\TrangChu\Index.cshtml" />
+    <Content Include="Views\TrangChu\GioiThieu.cshtml" />
+    <Content Include="Views\TrangChu\Sanpham.cshtml" />
+    <Content Include="TaiLieu\tulieubimat.pdf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

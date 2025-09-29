@@ -13,5 +13,13 @@ namespace WebApplication1.Controllers
         {
             return View();
         }
+        public ActionResult GioiThieu()
+        {
+            return View();
+        }
+        public ActionResult Sanpham()
+        {
+            return View();
+        }
     }
 }
