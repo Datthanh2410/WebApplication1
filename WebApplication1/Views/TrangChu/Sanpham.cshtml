@@ -9,10 +9,107 @@
     #fm-tbl1 {
         border-collapse: collapse;
     }
-
-    
+    .fm-align-text{
+        text-align :center;
+    }
+    #fm-tbl2{
+        border-style:groove;
+        border-width:5px;
+    }
 </style>
+<form id="fm-Register action=#" method="post">
+    <label for="hoten">Nhap ho ten: </label>
+    <input type="text" id="hoten" name="hoten" placeholder="vui long nhap hoten..." required />
+    <br />
+    <label for="pass">Nhap mat khau: </label>
+    <input type="password" name="pass" id="pass" required />
+    <br />
+    <label for="tuoi">Nhap tuoi: </label>
+    <input type="number" id="tuoi" name="tuoi" />
+    <br />
+    <label for="email">Nhap email: </label>
+    <input type="email" id="email" name="email" placeholder="vui long nhap email..." required />
+    <br />
+    <label for="ngaysinh">Chon ngay sinh</label>
+    <input type="date" id="ngaysinh" name="ngaysinh" required />
+    <br />
+    <label for="dulieu">Chon tep</label>
+    <input type="file" id="dulieu" name="dulieu" required />
+    <br />
+    <label for="sothich">Chon so thich: </label>
+    <input type="checkbox" name="sothich" value="Da banh" />Da banh
+    <input type="checkbox" name="sothich" value="Xem phim" />Xem phim
+    <input type="checkbox" name="sothich" value="Nghe nhac" />Nghe nhac
+    <br />
+    <label for="gioitinh">Chon gioi tinh: </label>
+    <input type="radio" name="gioitinh" value="nam" />Nam
+    <input type="radio" name="gioitinh" value="nu" />Nu
+    <br />
+    <textarea cols="20" rows="5">Noi dung ghi chu</textarea>
+    <br />
+    <label for="diachi">Chon dia chi</label>
+    <select name="diachi">
+        <option>Quan 10</option>
+        <option>Quan 5</option>
+        <option>Quan 3</option>
+    </select>
+    <label for="phuong">
+        <select name="phuong">
+            <optgroup label="Quan 10">
+                <option>Phuong 1</option>
+                <option>Phuong 2</option>
+                <option>Phuong 3</option>
+            </optgroup>
+            <optgroup label="Quan 5">
+                <option>Phuong 4</option>
+                <option>Phuong 5</option>
+                <option>Phuong 6</option>
+            </optgroup>
+            <optgroup label="Quan 3">
+                <option>Phuong 7</option>
+                <option>Phuong 8</option>
+                <option>Phuong 9</option>
+            </optgroup>
+        </select>
+    </label>
+    <br />   
+    <input type="reset" value="Xoa" />
+    <input type="submit" value="Gui" />
+</form>
 <h2>Bang san pham</h2>
+<video src="~/video/videongan.mp4" width="300" height="300" controls autoplay  ></video>
+<iframe width="300" height="300" src="https://www.youtube.com/embed/akeytNVcIy4?si=TREYFo2FQ9HDU_A-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<table border="1">
+    <thread>
+        <tr>
+            <th>STT</th>
+            <th>Ten san pham</th>
+            <th>So luong</th>
+            <th>Thanh tien</th>
+        </tr>
+    </thread>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>San pham A</td>
+            <td>10</td>
+            <td>500.000 VND</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>San pham B</td>
+            <td>20</td>
+            <td>1.000.000 VND</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr style="background-color:cornflowerblue">
+            <td colspan="2"> Tong:</td>
+            <td style="text-align:center;font-weight:bold">30</td>
+            <td colspan="2" style="text-align:right"><b>1.500.000 VND</b></td>
+        </tr>
+    </tfoot>
+</table>
 <table border="1" id="tbl1" style="border-collapse:collapse;" cellpadding="10">
     <colgroup>
         <col style="background-color:goldenrod"/>
@@ -49,38 +146,31 @@
         <td colspan="2" style="text-align:right"><b>3.000.000 VND</b></td>  
     </tr>
 </table>
-
-
-<table border="1">
+<table border="1" id="fm-tbl2">
     <colgroup>
-        <col style="background-color:lightcoral" /><col />
-        <col style="background-color:lightcoral" /><col />
+        <col style="background-color:aquamarine" />
+        <col span="2" style="background-color:lightcoral" /> 
     </colgroup>
-    <tr>
-        <th>STT</th>
+    <tr style="background-color:lightpink">   
         <th>Ten san pham</th>
         <th>So luong</th>
         <th>Thanh tien</th>
     </tr>
     <tr>
-        <td>1</td>
         <td rowspan="2">San pham D</td>
         <td>20</td>
         <td>5.000.000 VND</td>
     </tr>
-    <tr>
-        <td>2</td>      
+    <tr>     
         <td>30</td>
         <td>6.000.000 VND</td>
     </tr>
     <tr>
-        <td>3</td>
         <td rowspan="4">San pham F</td>
         <td>40</td>
         <td>7.000.000 VND</td>
     </tr>
     <tr>
-        <td>4</td>
         <td>50</td>
         <td>8.000.000 VND</td>
     </tr>
